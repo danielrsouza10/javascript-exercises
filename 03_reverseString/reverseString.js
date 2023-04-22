@@ -1,14 +1,12 @@
-const reverseString = function (text) {
-    let myArray = text.split("");
-    let reverseString = [];
+const reverseString = function(string) {
+    const toArray = string.split("").reverse();
+    const result = toArray.join("");
+    
 
-    for (i = myArray.length; i > 0; i--) {
-        reverseString = reverseString + myArray[i - 1];
-    }
+    
+    
 
-    reverseString = reverseString.toString();
-
-    return reverseString;
+    return result;
 
 };
 
