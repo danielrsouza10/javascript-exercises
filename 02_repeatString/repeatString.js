@@ -1,15 +1,15 @@
-const repeatString = function (x, y) {
-    z = "";
-    if (y < 0) {
+const repeatString = function (string, num) {
+    let result = "";
+
+    if (num < 0) {
         return "ERROR";
     } else {
-        while (y > 0) {
-            z = z + x;
-            y--;
+        while (num > 0) {
+            result += string;
+            num--;
         }
     }
-    return z;
-
+    return result;
 };
 
 // Do not edit below this line
